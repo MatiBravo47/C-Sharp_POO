@@ -1,0 +1,7 @@
+C:\Users\Matt_\source\repos\C# POO\C# POO\bin\Debug\C# POO.exe.config
+C:\Users\Matt_\source\repos\C# POO\C# POO\bin\Debug\C# POO.exe
+C:\Users\Matt_\source\repos\C# POO\C# POO\bin\Debug\C# POO.pdb
+C:\Users\Matt_\source\repos\C# POO\C# POO\obj\Debug\C# POO.csproj.AssemblyReference.cache
+C:\Users\Matt_\source\repos\C# POO\C# POO\obj\Debug\C# POO.csproj.CoreCompileInputs.cache
+C:\Users\Matt_\source\repos\C# POO\C# POO\obj\Debug\C# POO.exe
+C:\Users\Matt_\source\repos\C# POO\C# POO\obj\Debug\C# POO.pdb
