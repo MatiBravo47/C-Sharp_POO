@@ -17,14 +17,15 @@ namespace RegistroTemperaturas
            TemperaturasSemana semana = new TemperaturasSemana();
             for (int i = 0; i < 7; i++)
             {
-                Console.Write($"Ingrese temperatura dia {i}:");
+                Console.Write($"Ingrese temperatura dia {i + 1}:");
                 double temp = Double.Parse(Console.ReadLine());
                 semana.agregarTemperatura(temp);
 
             }
 
             Console.WriteLine($"\nTemperatura más alta: {semana.ObtenerTemperaturaMaxima()}°C");
-            Console.WriteLine($"\nTemperatura más alta: {semana.ObtenerTemperaturaMinima()}°C");
+            Console.WriteLine($"\nTemperatura más baja: {semana.ObtenerTemperaturaMinima()}°C");
+            Console.WriteLine($"\nTemperatura promedio: {semana.ObtenerTemperaturaPromedio()}°C");
 
         }
     }

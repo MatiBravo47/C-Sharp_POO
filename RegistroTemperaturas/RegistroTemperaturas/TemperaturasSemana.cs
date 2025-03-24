@@ -43,6 +43,16 @@ namespace RegistroTemperaturas
             }
             return min;
         }
+
+        public double ObtenerTemperaturaPromedio()
+        {
+            double total = 0;
+            foreach (var temp in ListaTemperatura)
+            {
+                total += temp.Valor;
+            }
+            return total/7;
+        }
       
     }
 }
