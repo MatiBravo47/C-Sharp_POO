@@ -1,0 +1,7 @@
+C:\Users\Matt_\source\repos\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.exe.config
+C:\Users\Matt_\source\repos\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.exe
+C:\Users\Matt_\source\repos\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.pdb
+C:\Users\Matt_\source\repos\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.AssemblyReference.cache
+C:\Users\Matt_\source\repos\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.CoreCompileInputs.cache
+C:\Users\Matt_\source\repos\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.exe
+C:\Users\Matt_\source\repos\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.pdb
