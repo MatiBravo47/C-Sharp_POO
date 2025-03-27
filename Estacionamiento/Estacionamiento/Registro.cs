@@ -6,7 +6,6 @@ namespace Estacionamiento
     internal class Registro
     {
         List<Auto> autos = new List<Auto>();
-
         public void agregarAuto()
         {
             Console.Write("Ingrese patente: ");
@@ -85,7 +84,6 @@ namespace Estacionamiento
             {
                 Console.WriteLine("Número de auto inválido");
             }
-
         }
     }
 }
