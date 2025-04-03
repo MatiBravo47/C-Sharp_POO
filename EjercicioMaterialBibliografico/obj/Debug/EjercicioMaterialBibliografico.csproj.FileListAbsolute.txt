@@ -1,0 +1,7 @@
+C:\Users\Matt_\source\repos\EjercicioMaterialBibliografico\bin\Debug\EjercicioMaterialBibliografico.exe.config
+C:\Users\Matt_\source\repos\EjercicioMaterialBibliografico\bin\Debug\EjercicioMaterialBibliografico.exe
+C:\Users\Matt_\source\repos\EjercicioMaterialBibliografico\bin\Debug\EjercicioMaterialBibliografico.pdb
+C:\Users\Matt_\source\repos\EjercicioMaterialBibliografico\obj\Debug\EjercicioMaterialBibliografico.csproj.AssemblyReference.cache
+C:\Users\Matt_\source\repos\EjercicioMaterialBibliografico\obj\Debug\EjercicioMaterialBibliografico.csproj.CoreCompileInputs.cache
+C:\Users\Matt_\source\repos\EjercicioMaterialBibliografico\obj\Debug\EjercicioMaterialBibliografico.exe
+C:\Users\Matt_\source\repos\EjercicioMaterialBibliografico\obj\Debug\EjercicioMaterialBibliografico.pdb
