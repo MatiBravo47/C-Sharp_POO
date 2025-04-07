@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Clases
 {
@@ -13,13 +9,13 @@ namespace Clases
             this.pesoMB = pesoMB;
         }
 
-
         private int pesoMB { get; set; }
-
 
         public override void mostrarInformacion()
         {
-            Console.WriteLine($"PesoMB: {pesoMB}");
+            base.mostrarInformacion();
+            Console.Write($", Peso: {pesoMB}");
+            Console.WriteLine();
         }
     }
 }

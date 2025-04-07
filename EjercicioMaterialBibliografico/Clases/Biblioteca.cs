@@ -16,9 +16,9 @@ namespace Clases
 
         public MaterialBibliografico(string titulo, string autor, int año)
         {
-            titulo = this.titulo;
-            autor = this.autor;
-            año = this.año;
+            this.titulo = titulo;
+            this.autor = autor;
+            this.año = año;
         }
 
         public MaterialBibliografico()
@@ -27,31 +27,77 @@ namespace Clases
 
         public virtual void mostrarInformacion()
         {
-            Console.WriteLine($"Titulo:{titulo}, autor:{autor}, año: {año}");
+            Console.Write($"Titulo: {titulo}, Autor: {autor}, Año: {año}");
         }
 
         public void agregarLibro()
         {
-            Console.WriteLine("Ingrese titulo de libro");
+            Console.Write("Ingrese titulo de libro: ");
             string nombreLibro = Console.ReadLine();
-            Console.WriteLine("Ingrese nombre del autor");
+            Console.Write("Ingrese nombre del autor: ");
             string nombreAutor = Console.ReadLine();
-            Console.WriteLine("Ingrese el año del libro");
+            Console.Write("Ingrese el año del libro: ");
             int añoLibro = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese cantidad de paginas");
+            Console.Write("Ingrese cantidad de paginas: ");
             int cantidadPaginas = int.Parse(Console.ReadLine());
             Libro libro = new Libro(nombreLibro, nombreAutor, añoLibro, cantidadPaginas);
             libros.Add(libro);
         }
 
-        public void mostrarLibros()
+        public void agregarEbook()
         {
-            foreach (var libro in libros)
+            Console.Write("Ingrese titulo de ebook: ");
+            string nombreEbook = Console.ReadLine();
+            Console.Write("Ingrese nombre del autor: ");
+            string autorEbook = Console.ReadLine();
+            Console.Write("Ingrese el año del ebook: ");
+            int añoEbook = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese peso ebook: ");
+            int pesoMBEbook = int.Parse(Console.ReadLine());
+            Ebook ebook = new Ebook(nombreEbook, autorEbook, añoEbook, pesoMBEbook);
+            ebooks.Add(ebook);
+        }
+
+        public void eliminarLibro()
+        {
+            Console.WriteLine("Ingrese el indice del libro que desea eliminar");
+            int indice = int.Parse(Console.ReadLine()) - 1;
+            if ((indice >= 0 ) && (indice <= libros.Count))
             {
-                libro.mostrarInformacion();
+                libros.Remove(libros[indice]);
+            } 
+        }
+
+        public void eliminarEbook() 
+        {
+            Console.WriteLine("Ingrese el indice del ebook que desea eliminar");
+            int indice = int.Parse(Console.ReadLine()) - 1;
+            if ((indice >= 0) && (indice <= ebooks.Count))
+            {
+                ebooks.Remove(ebooks[indice]);
             }
         }
 
+        public void mostrarLibros()
+        {
+            int indice = 1;
+            foreach (var libro in libros)
+            {
+                Console.Write($"Libro {indice} - ");
+                libro.mostrarInformacion();
+                indice++;
+            }
+        }
 
+        public void mostrarEbooks()
+        {
+            int indice = 1;
+            foreach (var ebook in ebooks)
+            {
+                Console.Write($"ebook {indice} - ");
+                ebook.mostrarInformacion();
+                indice++;
+            }
+        }
     }
 }
