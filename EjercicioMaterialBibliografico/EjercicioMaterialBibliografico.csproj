@@ -46,6 +46,7 @@
     <Compile Include="Clases\Biblioteca.cs" />
     <Compile Include="Clases\Ebook.cs" />
     <Compile Include="Clases\Libro.cs" />
+    <Compile Include="Clases\Revista.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
