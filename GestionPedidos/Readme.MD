@@ -55,5 +55,3 @@ Los controladores manejan la lógica de la aplicación y actúan como intermedia
 4. El usuario puede ver el total del pedido con o sin IVA utilizando las opciones del menú.
 
 ---
-
-> ✨ Este proyecto es ideal para practicar conceptos de programación orientada a objetos y arquitectura en capas con C#.
