@@ -9,6 +9,7 @@ namespace Views
 {
     public static class OrderView
     {
+        /*
         public static void ShowProducts(List<Product> list)
         {
             ProductView.ShowProductList(list);
@@ -32,5 +33,6 @@ namespace Views
 
             return temp;
         }
+        */
     }
 }

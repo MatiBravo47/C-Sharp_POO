@@ -10,22 +10,33 @@ namespace Controllers
 {
     public class ProductController
     {
-        /*
+
+        private List<Product> _products;
+
         public ProductController()
         {
+            _products = new List<Product>();
         }
 
-        public Product LoadProduct()
+        // Método para agregar un producto a la lista
+        public void AddProduct() 
         {
-            Console.WriteLine("------LOADING PRODUCT------");
-            return ProductView.LoadProduct();
+            Console.WriteLine("Agregando un nuevo producto");
+            Product product = ProductView.LoadProduct();
+            _products.Add(product);
+            Console.WriteLine("Producto agregado exitosamente");
         }
-        */
 
-        public void CreateAndShowProduct()
+        public void ShowAllProducts()
         {
-            Product product = new Product("Smartphone", 799.99, "Un teléfono inteligente de última generación");
-            ProductView.ShowProduct(product)
+            if (_products.Count == 0)
+            {
+                Console.WriteLine("No hay productos en la lista.");
+                return;
+            }
+
+            Console.WriteLine("Mostrando todos los productos:");
+            ProductView.ShowProductList(_products); // Mostrar la lista de productos usando la vista
         }
     }
 }

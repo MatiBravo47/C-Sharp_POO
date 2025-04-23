@@ -19,12 +19,13 @@ namespace SistemaDePedidos.Controllers
             this.cController = new ClientController();
             this.pController = new ProductController();
         }
-
+        /*
         public void CreateOrder()
         {
             Order temp = new Order();
             temp.client = ClientView.LoadClient();
             temp.setProductList(OrderView.LoadProductList());
         }
+        */
     }
 }

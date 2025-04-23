@@ -9,7 +9,6 @@ namespace Views
 {
     public static class ProductView
     {
-        /*
         public static void ShowProductList(List<Product> productList)
         {
             foreach (Product var in productList)
@@ -17,7 +16,6 @@ namespace Views
                 ShowProduct(var);
             }
         }
-        */
         public static void ShowProduct(Product product)
         {
             Console.WriteLine("-----------------------");
@@ -28,7 +26,6 @@ namespace Views
             Console.WriteLine("-----------------------");
         }
 
-        /*
         public static Product LoadProduct()
         {
             Product temp = new Product();
@@ -41,6 +38,5 @@ namespace Views
 
             return temp;
         }
-        */
     }
 }
