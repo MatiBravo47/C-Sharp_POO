@@ -5,3 +5,10 @@ C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\GestionPedidos.exe
 C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\GestionPedidos.pdb
 C:\Users\Matt_\source\repos\GestionPedidos\obj\Debug\GestionPedidos.exe
 C:\Users\Matt_\source\repos\GestionPedidos\obj\Debug\GestionPedidos.pdb
+C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\bin\Debug\GestionPedidos.exe.config
+C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\bin\Debug\GestionPedidos.exe
+C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\bin\Debug\GestionPedidos.pdb
+C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\obj\Debug\GestionPedidos.csproj.AssemblyReference.cache
+C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\obj\Debug\GestionPedidos.csproj.CoreCompileInputs.cache
+C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\obj\Debug\GestionPedidos.exe
+C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\obj\Debug\GestionPedidos.pdb

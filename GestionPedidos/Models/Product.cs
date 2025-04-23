@@ -12,10 +12,7 @@ namespace Models
         public double Price { get; set; }
         public string Desc { get; set; }
 
-        public Product()
-        {
-
-        }
+        public Product(){}
 
         public Product(string Name, double Price, string Desc)
         {

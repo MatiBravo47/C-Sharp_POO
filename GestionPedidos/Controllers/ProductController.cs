@@ -8,9 +8,9 @@ using Models;
 
 namespace Controllers
 {
-    class ProductController
+    public class ProductController
     {
-
+        /*
         public ProductController()
         {
         }
@@ -20,7 +20,12 @@ namespace Controllers
             Console.WriteLine("------LOADING PRODUCT------");
             return ProductView.LoadProduct();
         }
+        */
 
-
+        public void CreateAndShowProduct()
+        {
+            Product product = new Product("Smartphone", 799.99, "Un teléfono inteligente de última generación");
+            ProductView.ShowProduct(product)
+        }
     }
 }

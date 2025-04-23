@@ -1,4 +1,5 @@
 ﻿using System;
+using Controllers;
 
 namespace SistemaDePedidos
 {
@@ -6,7 +7,9 @@ namespace SistemaDePedidos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProductController productController = new ProductController();
+            productController.CreateAndShowProduct();
+            Console.ReadLine();
         }
     }
 }
