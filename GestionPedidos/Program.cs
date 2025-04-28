@@ -1,5 +1,6 @@
 ﻿using System;
 using Controllers;
+using System.Threading;
 
 namespace SistemaDePedidos
 {
@@ -13,12 +14,15 @@ namespace SistemaDePedidos
             bool running = true;
             while (running)
             {
-                Console.WriteLine("Menu de productos");
-                Console.WriteLine("1. Agregar productos");
-                Console.WriteLine("2. Mostrar todos los productos");
-                Console.WriteLine("3. Agregar clientes");
-                Console.WriteLine("4. Mostrar todos los clientes");
-                Console.WriteLine("5. Salir");
+
+                Console.WriteLine("Products menu");
+                Console.WriteLine("1. Add product");
+                Console.WriteLine("2. Show all products");
+                Console.WriteLine("3. Update product");
+                Console.WriteLine("4. Delete product");
+                Console.WriteLine("5. Add client");
+                Console.WriteLine("6. Show all clients");
+                Console.WriteLine("7. Exit");
                 int option = int.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -29,16 +33,26 @@ namespace SistemaDePedidos
                         productController.ShowAllProducts();
                         break;
                     case 3:
-                        clientController.AddClient();
+                        productController.UpdateProduct();
                         break;
                     case 4:
-                        clientController.ShowAllClients();
+                        productController.DeleteProduct();
                         break;
                     case 5:
+                        clientController.AddClient();
+                        break;
+                    case 6:
+                        clientController.ShowAllClients();
+                        break;
+                    case 7:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Exiting...");
+                        Console.ResetColor();
+                        Thread.Sleep(3000); // Pausa de 3 segundos
                         running = false;
-                        break; 
+                        break;
                     default:
-                        Console.WriteLine("Opcion incorrecta");
+                        Console.WriteLine("Incorrect answer");
                         break;
                 }
             }
