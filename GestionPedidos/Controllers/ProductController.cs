@@ -17,7 +17,7 @@ namespace Controllers
         // Método para agregar un producto a la lista
         public Product LoadProduct()
         {
-            Console.WriteLine("-------Loading product---");
+            Console.WriteLine("-------Cargando producto---");
             return ProductView.LoadProduct();
         }
 

@@ -10,7 +10,6 @@ namespace Controllers
 {
     class ClientController
     {
-
         public ClientController() { }
 
         public Client LoadClient() 
@@ -23,30 +22,5 @@ namespace Controllers
         {
             ClientView.ShowClient(temp);
         }
-
-        //Agrega cliente a la lista clientes
-        //public void AddClient()
-        //{
-        //    Console.WriteLine("Agregando un cliente");
-        //    Client client = ClientView.LoadClient();
-        //    _clients.Add(client);
-        //    Console.WriteLine("Cliente agregado a la lista");
-        //}
-
-        //public void ShowAllClients() 
-        //{
-        //    if (_clients.Count() == 0)
-        //    {
-        //        Console.WriteLine("Lista vacia");
-        //        return;
-        //    }
-        //    else 
-        //    {
-        //        foreach (Client client in _clients)
-        //        {
-        //            ClientView.ShowClient(client);
-        //        }
-        //    }
-        //}
     }
 }

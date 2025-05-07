@@ -61,13 +61,13 @@ namespace Controllers
         //Este metodo no es necesario si se usa en el constructor
         public void LoadOrdersFromJson() 
         {
-            this.orderList = Repository<Order>.ObtenerTodos("Repository/data/ordenes");
+            this.orderList = Repository<Order>.ObtenerTodos("Repository/Data/ordenes");
             OrderView.showMsg("Ordenes cargadas desde JSON");
         }
 
         public void Test() 
         {
-            var ordenes = Repository<Order>.ObtenerTodos("Repository/data/ordenes");
+            var ordenes = Repository<Order>.ObtenerTodos("Repository/Data/ordenes");
             foreach (var o in ordenes)
             {
                 Console.WriteLine($"Cliente: {o.client.Name}");

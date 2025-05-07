@@ -19,22 +19,24 @@ namespace Views
         public static void ShowProduct(Product product)
         {
             Console.WriteLine("-----------------------");
-            Console.WriteLine($"Name: {product.Name}");
-            Console.WriteLine($"Price: {product.Price}");
-            Console.WriteLine($"Final price: {product.FinalPrice()}");
-            Console.WriteLine($"Info: {product.Desc}");
+            Console.WriteLine($"Nombre de producto: {product.Name}");
+            Console.WriteLine($"Precio: {product.Price}");
+            Console.WriteLine($"Precio final: {product.FinalPrice()}");
+            Console.WriteLine($"Descripcion: {product.Desc}");
             Console.WriteLine("-----------------------");
         }
 
         public static Product LoadProduct()
         {
             Product temp = new Product();
-            Console.WriteLine("Product name?");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("Nombre de producto: ");
             temp.Name = Console.ReadLine();
-            Console.WriteLine("Product price?");
+            Console.WriteLine("Precio de producto");
             temp.Price = double.Parse(Console.ReadLine());
-            Console.WriteLine("Product description?");
+            Console.WriteLine("Descripcion del producto");
             temp.Desc = Console.ReadLine();
+            Console.WriteLine("-----------------------");
 
             return temp;
         }
@@ -45,10 +47,9 @@ namespace Views
             do
             {
                 temp.Add(ProductView.LoadProduct());
-                Console.WriteLine("Add another product? Y/N");
+                Console.WriteLine("Agregar otro producto? Y/N");
                 resp = Console.ReadLine();
             } while (resp.ToLower() != "n");
-
             return temp;
         }
     }

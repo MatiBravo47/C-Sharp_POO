@@ -13,10 +13,7 @@ namespace Models
         
         private List<Product> productList = new List<Product>();
 
-        public Order()
-        {
-
-        }
+        public Order(){}
 
         public double CalculateTotalIVA()
         {
@@ -25,7 +22,6 @@ namespace Models
             {
                 finalTotal += item.FinalPrice();
             }
-
             return finalTotal;
         }
 

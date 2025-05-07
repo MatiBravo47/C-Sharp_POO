@@ -20,8 +20,8 @@ namespace SistemaDePedidos
             {
                 int input = 0;
                 Console.WriteLine("Ingrese una opcion");
-                Console.WriteLine("Opcion 1: Cargar pedido");
-                Console.WriteLine("Opcion 2: Mostrar pedido");
+                Console.WriteLine("1: Cargar pedido");
+                Console.WriteLine("2: Mostrar pedido");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
                 {
@@ -32,7 +32,7 @@ namespace SistemaDePedidos
                         oController.ShowOrders();
                         break;
                     default:
-                        Console.WriteLine("Incorrect answer");
+                        Console.WriteLine("Error, ingrese otra opcion");
                         break;
                 }
             } while (!salida);
