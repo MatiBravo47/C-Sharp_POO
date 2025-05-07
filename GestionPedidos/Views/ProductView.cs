@@ -38,5 +38,18 @@ namespace Views
 
             return temp;
         }
+
+        public static List<Product> LoadProductList() {
+            string resp = "n";
+            List<Product> temp = new List<Product>();
+            do
+            {
+                temp.Add(ProductView.LoadProduct());
+                Console.WriteLine("Add another product? Y/N");
+                resp = Console.ReadLine();
+            } while (resp.ToLower() != "n");
+
+            return temp;
+        }
     }
 }

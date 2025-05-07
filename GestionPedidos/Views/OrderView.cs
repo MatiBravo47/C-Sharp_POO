@@ -9,30 +9,9 @@ namespace Views
 {
     public static class OrderView
     {
-        /*
-        public static void ShowProducts(List<Product> list)
+        public static void showMsg(string msg) 
         {
-            ProductView.ShowProductList(list);
+            Console.WriteLine(msg);
         }
-
-        public static void ShowClient(Client client)
-        {
-            ClientView.ShowClient(client);
-        }
-
-        public static List<Product> LoadProductList()
-        {
-            string resp = "n";
-            List<Product> temp = new List<Product>();
-            do
-            {
-                temp.Add(ProductView.LoadProduct());
-                Console.WriteLine("Add another product? Y/N");
-                resp = Console.ReadLine();
-            } while (resp.ToLower() != "n");
-
-            return temp;
-        }
-        */
     }
 }

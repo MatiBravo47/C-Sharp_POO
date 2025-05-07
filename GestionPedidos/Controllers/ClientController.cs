@@ -10,12 +10,9 @@ namespace Controllers
 {
     class ClientController
     {
-        private List<Client> _clients; 
+        private List<Client> _clients;
 
-        public ClientController()
-        {
-            _clients = new List<Client>();
-        }
+        public ClientController() { }
 
         //Agrega cliente a la lista clientes
         public void AddClient()
@@ -41,7 +38,5 @@ namespace Controllers
                 }
             }
         }
-
-
     }
 }
