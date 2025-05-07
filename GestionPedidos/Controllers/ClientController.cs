@@ -10,33 +10,43 @@ namespace Controllers
 {
     class ClientController
     {
-        private List<Client> _clients;
 
         public ClientController() { }
 
-        //Agrega cliente a la lista clientes
-        public void AddClient()
+        public Client LoadClient() 
         {
-            Console.WriteLine("Agregando un cliente");
-            Client client = ClientView.LoadClient();
-            _clients.Add(client);
-            Console.WriteLine("Cliente agregado a la lista");
+            Console.WriteLine("--Loading client--");
+            return ClientView.LoadClient();
         }
 
-        public void ShowAllClients() 
+        public void ShowClient(Client temp) 
         {
-            if (_clients.Count() == 0)
-            {
-                Console.WriteLine("Lista vacia");
-                return;
-            }
-            else 
-            {
-                foreach (Client client in _clients)
-                {
-                    ClientView.ShowClient(client);
-                }
-            }
+            ClientView.ShowClient(temp);
         }
+
+        //Agrega cliente a la lista clientes
+        //public void AddClient()
+        //{
+        //    Console.WriteLine("Agregando un cliente");
+        //    Client client = ClientView.LoadClient();
+        //    _clients.Add(client);
+        //    Console.WriteLine("Cliente agregado a la lista");
+        //}
+
+        //public void ShowAllClients() 
+        //{
+        //    if (_clients.Count() == 0)
+        //    {
+        //        Console.WriteLine("Lista vacia");
+        //        return;
+        //    }
+        //    else 
+        //    {
+        //        foreach (Client client in _clients)
+        //        {
+        //            ClientView.ShowClient(client);
+        //        }
+        //    }
+        //}
     }
 }

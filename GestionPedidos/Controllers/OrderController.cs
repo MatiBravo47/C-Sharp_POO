@@ -4,6 +4,7 @@ using System.IO;
 using Controllers;
 using Models;
 using Views;
+using Repository;
 
 namespace Controllers
 {
@@ -54,6 +55,28 @@ namespace Controllers
                 pController.ShowProductList(o.getProductList());
                 Console.WriteLine($"Total sin IVA: ${ o.CalculateTotal()}");
                 Console.WriteLine($"Total con IVA: ${o.CalculateTotalIVA()}");
+            }
+        }
+
+        //Este metodo no es necesario si se usa en el constructor
+        public void LoadOrdersFromJson() 
+        {
+            this.orderList = Repository<Order>.ObtenerTodos("Repository/data/ordenes");
+            OrderView.showMsg("Ordenes cargadas desde JSON");
+        }
+
+        public void Test() 
+        {
+            var ordenes = Repository<Order>.ObtenerTodos("Repository/data/ordenes");
+            foreach (var o in ordenes)
+            {
+                Console.WriteLine($"Cliente: {o.client.Name}");
+                Console.WriteLine("Productos:");
+                foreach(var p in o.getProductList())
+                {
+                    Console.WriteLine($"-{p.Name}: ${p.Price} | Final con IVA: ${p.FinalPrice()}");
+                }
+                Console.WriteLine("--------");
             }
         }
 

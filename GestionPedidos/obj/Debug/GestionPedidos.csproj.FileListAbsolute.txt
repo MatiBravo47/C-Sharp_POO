@@ -12,3 +12,24 @@ C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\obj
 C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\obj\Debug\GestionPedidos.csproj.CoreCompileInputs.cache
 C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\obj\Debug\GestionPedidos.exe
 C:\Users\Matt_\OneDrive\Desktop\Nueva carpeta (2)\C-Sharp_POO\GestionPedidos\obj\Debug\GestionPedidos.pdb
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Buffers.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Memory.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Text.Json.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.ValueTuple.dll
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Buffers.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Memory.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Text.Json.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.ValueTuple.xml
+C:\Users\Matt_\source\repos\GestionPedidos\obj\Debug\GestionP.75F12D82.Up2Date

@@ -1,61 +1,41 @@
 ﻿using System;
 using Controllers;
 using System.Threading;
+using System.ComponentModel.Design;
 
 namespace SistemaDePedidos
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
-
-            ProductController productController = new ProductController();
-            ClientController clientController = new ClientController();
-            bool running = true;
-            while (running)
+            Menu();
+        }
+        static void Menu()
+        {
+            OrderController oController = new OrderController();
+            
+            bool salida = false;
+            do
             {
-
-                Console.WriteLine("Products menu");
-                Console.WriteLine("1. Add product");
-                Console.WriteLine("2. Show all products");
-                Console.WriteLine("3. Update product");
-                Console.WriteLine("4. Delete product");
-                Console.WriteLine("5. Add client");
-                Console.WriteLine("6. Show all clients");
-                Console.WriteLine("7. Exit");
-                int option = int.Parse(Console.ReadLine());
-                switch (option)
+                int input = 0;
+                Console.WriteLine("Ingrese una opcion");
+                Console.WriteLine("Opcion 1: Cargar pedido");
+                Console.WriteLine("Opcion 2: Mostrar pedido");
+                input = int.Parse(Console.ReadLine());
+                switch (input)
                 {
                     case 1:
-                        productController.AddProduct();
+                        oController.CreateOrder();
                         break;
                     case 2:
-                        productController.ShowAllProducts();
-                        break;
-                    case 3:
-                        productController.UpdateProduct();
-                        break;
-                    case 4:
-                        productController.DeleteProduct();
-                        break;
-                    case 5:
-                        clientController.AddClient();
-                        break;
-                    case 6:
-                        clientController.ShowAllClients();
-                        break;
-                    case 7:
-                        Console.ForegroundColor = ConsoleColor.Cyan;
-                        Console.WriteLine("Exiting...");
-                        Console.ResetColor();
-                        Thread.Sleep(3000); // Pausa de 3 segundos
-                        running = false;
+                        oController.ShowOrders();
                         break;
                     default:
                         Console.WriteLine("Incorrect answer");
                         break;
                 }
-            }
+            } while (!salida);
         }
     }
 }
