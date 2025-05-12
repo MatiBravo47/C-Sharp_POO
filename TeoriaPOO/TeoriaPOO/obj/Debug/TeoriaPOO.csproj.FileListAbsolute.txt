@@ -1,7 +1,0 @@
-C:\Users\Matt_\source\repos\TeoriaPOO\TeoriaPOO\obj\Debug\TeoriaPOO.csproj.AssemblyReference.cache
-C:\Users\Matt_\source\repos\TeoriaPOO\TeoriaPOO\obj\Debug\TeoriaPOO.csproj.CoreCompileInputs.cache
-C:\Users\Matt_\source\repos\TeoriaPOO\TeoriaPOO\bin\Debug\TeoriaPOO.exe.config
-C:\Users\Matt_\source\repos\TeoriaPOO\TeoriaPOO\bin\Debug\TeoriaPOO.exe
-C:\Users\Matt_\source\repos\TeoriaPOO\TeoriaPOO\bin\Debug\TeoriaPOO.pdb
-C:\Users\Matt_\source\repos\TeoriaPOO\TeoriaPOO\obj\Debug\TeoriaPOO.exe
-C:\Users\Matt_\source\repos\TeoriaPOO\TeoriaPOO\obj\Debug\TeoriaPOO.pdb
