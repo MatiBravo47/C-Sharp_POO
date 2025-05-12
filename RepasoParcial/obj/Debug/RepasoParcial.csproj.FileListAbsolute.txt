@@ -1,0 +1,2 @@
+C:\Users\Matt_\source\repos\RepasoParcial\obj\Debug\RepasoParcial.csproj.AssemblyReference.cache
+C:\Users\Matt_\source\repos\RepasoParcial\obj\Debug\RepasoParcial.csproj.CoreCompileInputs.cache
