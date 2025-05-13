@@ -27,7 +27,13 @@ namespace Views
         {
             string resp = "n";
             List<Product> tempList = new List<Product>();
-
+            do
+            {
+                tempList.Add(loadProduct());
+                Console.WriteLine("Desea agregar otro producto");
+                resp = Console.ReadLine();
+            } while (resp.ToLower() != "n");
+            return tempList;
         }
 
         //Muestra cada producto en la lista

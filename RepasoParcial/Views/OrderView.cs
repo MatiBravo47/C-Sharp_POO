@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Views
 {
-    public class OrderView
+    public static class OrderView
     {
-        void LoadOrder() 
+        public static void showMsg(string msg) 
         {
+            Console.WriteLine(msg);
         }
     }
 }
