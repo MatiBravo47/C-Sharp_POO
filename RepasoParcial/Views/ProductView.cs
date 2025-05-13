@@ -9,7 +9,7 @@ namespace Views
 {
     public static class ProductView
     {
-        public static Product loadProduct() 
+        public static Product LoadProduct() 
         {
             Product tempProduct =  new Product();
 
@@ -23,13 +23,13 @@ namespace Views
             return tempProduct;
         }
 
-        public static List<Product> loadProductList() 
+        public static List<Product> LoadProductList() 
         {
             string resp = "n";
             List<Product> tempList = new List<Product>();
             do
             {
-                tempList.Add(loadProduct());
+                tempList.Add(LoadProduct());
                 Console.WriteLine("Desea agregar otro producto");
                 resp = Console.ReadLine();
             } while (resp.ToLower() != "n");
@@ -37,15 +37,15 @@ namespace Views
         }
 
         //Muestra cada producto en la lista
-        public static void showProductList(List<Product> productList) 
+        public static void ShowProductList(List<Product> productList) 
         {
             foreach (Product var in productList) 
             {
-                showProduct(var);
+                ShowProduct(var);
             }
         }
 
-        public static void showProduct(Product product) 
+        public static void ShowProduct(Product product) 
         {
             Console.WriteLine($"Producto: {product.Name}");
             Console.WriteLine($"Precio: {product.Price}");

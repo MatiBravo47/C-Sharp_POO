@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Views;
+using Models;
 
 namespace Controllers
 {
@@ -10,10 +12,15 @@ namespace Controllers
     {
         public ClientController() { }
 
-        public ClientController LoadClient() 
+        public Client LoadClient() 
         {
             Console.WriteLine("Cargando clientes");
-            return OrderView.LoadOrder();
+            return ClientView.LoadClient();
+        }
+
+        public void ShowClient(Client temp) 
+        {
+            ClientView.ShowClient(temp);
         }
 
 
