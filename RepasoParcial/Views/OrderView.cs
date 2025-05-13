@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepasoParcial.Views
+namespace Views
 {
-    internal class OrderView
+    public class OrderView
     {
+        void LoadOrder() 
+        {
+        }
     }
 }

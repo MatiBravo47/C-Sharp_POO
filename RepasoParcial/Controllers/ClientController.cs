@@ -8,6 +8,14 @@ namespace Controllers
 {
     public class ClientController
     {
+        public ClientController() { }
+
+        public ClientController LoadClient() 
+        {
+            Console.WriteLine("Cargando clientes");
+            return OrderView.LoadOrder();
+        }
+
 
     }
 }

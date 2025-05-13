@@ -26,7 +26,13 @@ namespace Controllers
         }
 
         // Metodos a completar 
-        public void CreateOrder() { }
+        public void CreateOrder() 
+        {
+            var temp = new Order 
+            {
+                client = 
+            }
+        }
         public void ShowAllOrders() { }
         public void DeleteOrderByClientID(string clientID) { }
         public void UpdateClientByID(string clientID, Client nuevoCliente) { }
