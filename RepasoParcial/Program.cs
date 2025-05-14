@@ -50,6 +50,7 @@ namespace RepasoParcial
                 catch (Exception e)
                 {
                     Console.WriteLine("Error");
+                    Console.ReadKey();
                     opcion = 1; Console.ReadKey();
                 }
             } while (opcion != 0);

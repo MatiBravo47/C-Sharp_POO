@@ -19,14 +19,14 @@ namespace Controllers
 
         public OrderController() 
         {
-            this.cController = new ClientController();
-            this.pController = new ProductController();
+            cController = new ClientController();
+            pController = new ProductController();
             CargarOrdenes();
         }
 
         private void CargarOrdenes() 
         {
-            orderList = Repository<Order>.ObtenerTodos(Path.Combine("Repository", "Data", "Ordenes"));
+            orderList = Repository<Order>.ObtenerTodos(Path.Combine("Repository", "Data", "ordenes"));
         }
 
         private void GuardarOrdenes() 
@@ -59,6 +59,7 @@ namespace Controllers
             nuevaOrden.productList = productos;
 
             orderList.Add(nuevaOrden);
+            Console.WriteLine(orderList);
             GuardarOrdenes();
 
             OrderView.showMsg("Orden creada y guardada con exito");

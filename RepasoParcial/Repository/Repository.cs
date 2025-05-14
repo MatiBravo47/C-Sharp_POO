@@ -37,16 +37,15 @@ namespace Repository
         {
             Directory.CreateDirectory(basePath);
             string path = Path.Combine(basePath, $"{archivo}.json");
+            Console.WriteLine(path);
             File.WriteAllText($"Repository/Data/{archivo}.json", JsonSerializer.Serialize(datos, options));
         }
         private static List<T> Cargar(string archivo)
         {
-            string path = $"Repository/Data/{archivo}.json";
+            string path = Path.Combine(basePath, $"{archivo}.json");
             if (!File.Exists(path)) return new List<T>();
-            return
-
-            JsonSerializer.Deserialize<List<T>>(File.ReadAllText(path), options)
-            ?? new List<T>();
+            string json = File.ReadAllText(path);
+            return JsonSerializer.Deserialize<List<T>>(json, options) ?? new List<T>();
         }
 
         public static void GuardarLista(string archivo, List<T> datos) 
