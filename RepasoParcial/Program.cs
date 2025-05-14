@@ -12,9 +12,10 @@ namespace RepasoParcial
     {
         static void Main()
         {
-            var controller = new OrderController();
-            controller.LoadOrders();
-            while (true)
+            OrderController controller = new OrderController();
+
+            int opcion = 0;
+            do
             {
                 Console.Clear();
                 Console.WriteLine("1. Crear nueva orden");
@@ -23,26 +24,35 @@ namespace RepasoParcial
                 Console.WriteLine("4. Actualizar cliente en una orden");
                 Console.WriteLine("5. Salir");
                 Console.Write("Seleccione una opción: ");
-                var opcion = Console.ReadLine();
-                switch (opcion)
-                {
-                    case "1":
-                        //Lógica
-                        break;
-                    case "2":
-                        //Lógica
-                        break;
-                    case "3":
-                        //Lógica
-                        break;
-                    case "4":
-                        //Lógica
-                        break;
-                    case "5":
-                        return;
 
+                try
+                {
+                    opcion = int.Parse(Console.ReadLine());
+
+                    switch (opcion)
+                    {
+                        case 1:
+                            controller.CreateOrder();
+                            break;
+                        case 2:
+                            //Lógica
+                            break;
+                        case 3:
+                            //Lógica
+                            break;
+                        case 4:
+                            //Lógica
+                            break;
+                        case 5:
+                            return;
+                    }
                 }
-            }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error");
+                    opcion = 1; Console.ReadKey();
+                }
+            } while (opcion != 0);
         }
     }
 }

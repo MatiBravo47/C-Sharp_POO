@@ -21,30 +21,48 @@ namespace Controllers
         {
             this.cController = new ClientController();
             this.pController = new ProductController();
-            this.orderList = Repository<Order>.ObtenerTodos(Path.Combine("Repository", "Data", "Ordenes"));
+            CargarOrdenes();
         }
 
-
-
-        public void LoadOrders() 
+        private void CargarOrdenes() 
         {
-            orderList = Repository<Order>.ObtenerTodos("ordenes");
+            orderList = Repository<Order>.ObtenerTodos(Path.Combine("Repository", "Data", "Ordenes"));
         }
 
-        public void SaveOrders() 
+        private void GuardarOrdenes() 
         {
-            foreach (var orden in orderList) 
-            {
-                Repository<Order>.Agregar("ordenes", orden);
-            }
+            Repository<Order>.GuardarLista(Path.Combine("Repository", "Data", "ordenes"), orderList);
         }
+
 
         // Metodos a completar 
         public void CreateOrder() 
         {
-            var tempOrder = new Order();
-            tempOrder.client = cController.LoadClient();
+            var cliente = cController.LoadClient();
+            if (cliente == null) 
+            {
+                OrderView.showMsg("Error No se puede crear la orden: Cliente invalido");
+                return;
+            }
 
+            var productos = pController.LoadProductList();
+            {
+                if (productos == null || productos.Count == 0)
+                {
+                    OrderView.showMsg("Error No se puede crear la orden: Cliente invalido");
+                    return;
+                }
+            }
+
+            Order nuevaOrden = new Order();
+            nuevaOrden.client = cliente;
+            nuevaOrden.productList = productos;
+
+            orderList.Add(nuevaOrden);
+            GuardarOrdenes();
+
+            OrderView.showMsg("Orden creada y guardada con exito");
+            
         }
         public void ShowAllOrders() { }
         public void DeleteOrderByClientID(string clientID) { }
