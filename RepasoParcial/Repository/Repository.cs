@@ -16,8 +16,7 @@ namespace Repository
             Guardar(archivo, datos);
         }
         public static List<T> ObtenerTodos(string archivo) => Cargar(archivo);
-        public static void Eliminar(string archivo, Predicate<T>
-        predicado)
+        public static void Eliminar(string archivo, Predicate<T> predicado)
         {
             var datos = Cargar(archivo);
             datos.RemoveAll(predicado);
@@ -35,10 +34,13 @@ namespace Repository
         }
         private static void Guardar(string archivo, List<T> datos)
         {
+            Console.WriteLine("Ingreso a metodo guardar en repository");
             Directory.CreateDirectory(basePath);
+            Console.WriteLine($"Este es el basePath: {basePath}");
             string path = Path.Combine(basePath, $"{archivo}.json");
-            Console.WriteLine(path);
+            Console.WriteLine($"Este es el Path: {path}");
             File.WriteAllText($"Repository/Data/{archivo}.json", JsonSerializer.Serialize(datos, options));
+            Console.ReadKey();
         }
         private static List<T> Cargar(string archivo)
         {
@@ -58,6 +60,7 @@ namespace Repository
             catch (IOException ex )
             {
                 Console.Error.WriteLine($"[Error] No se pudo guardar el archivo {archivo}.json: {ex.Message}");
+                Console.ReadKey();
             }
         }
     }

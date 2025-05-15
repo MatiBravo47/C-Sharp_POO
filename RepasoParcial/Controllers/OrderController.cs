@@ -36,10 +36,10 @@ namespace Controllers
 
 
         // Metodos a completar 
-        public void CreateOrder() 
+        public void CreateOrder()
         {
             var cliente = cController.LoadClient();
-            if (cliente == null) 
+            if (cliente == null)
             {
                 OrderView.showMsg("Error No se puede crear la orden: Cliente invalido");
                 return;
@@ -57,9 +57,9 @@ namespace Controllers
             Order nuevaOrden = new Order();
             nuevaOrden.client = cliente;
             nuevaOrden.productList = productos;
-
+            Console.WriteLine($"Nueva orden: {nuevaOrden}");
             orderList.Add(nuevaOrden);
-            Console.WriteLine(orderList);
+            Console.WriteLine($"Esta es la orderList: {orderList}");
             GuardarOrdenes();
 
             OrderView.showMsg("Orden creada y guardada con exito");

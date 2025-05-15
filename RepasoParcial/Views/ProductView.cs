@@ -30,7 +30,7 @@ namespace Views
             do
             {
                 tempList.Add(LoadProduct());
-                Console.WriteLine("Desea agregar otro producto");
+                Console.WriteLine("Desea agregar otro producto(S/N)");
                 resp = Console.ReadLine();
             } while (resp.ToLower() != "n");
             return tempList;
