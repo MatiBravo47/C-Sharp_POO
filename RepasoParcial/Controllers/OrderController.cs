@@ -44,7 +44,6 @@ namespace Controllers
                 OrderView.showMsg("Error No se puede crear la orden: Cliente invalido");
                 return;
             }
-
             var productos = pController.LoadProductList();
             {
                 if (productos == null || productos.Count == 0)
@@ -53,13 +52,10 @@ namespace Controllers
                     return;
                 }
             }
-
             Order nuevaOrden = new Order();
             nuevaOrden.client = cliente;
             nuevaOrden.productList = productos;
-            Console.WriteLine($"Nueva orden: {nuevaOrden}");
             orderList.Add(nuevaOrden);
-            Console.WriteLine($"Esta es la orderList: {orderList}");
             GuardarOrdenes();
 
             OrderView.showMsg("Orden creada y guardada con exito");
@@ -67,9 +63,9 @@ namespace Controllers
         }
         public void ShowAllOrders() 
         {
-            if (orderList.Count == 0) 
+            if (orderList.Count == 0)
             {
-                Console.WriteLine("No hay ordenes");
+                OrderView.showMsg("No hay ordenes");
             }
             int indice = 0;
 
@@ -82,7 +78,28 @@ namespace Controllers
                 indice++;
             }
         }
-        public void DeleteOrderByClientID(string clientID) { }
-        public void UpdateClientByID(string clientID, Client nuevoCliente) { }
+        public void DeleteOrderByClientID() 
+        {
+            ShowAllOrders();
+            OrderView.showMsg("Ingrese un indice:");
+            int index = int.Parse(Console.ReadLine());
+            orderList.RemoveAt(index);
+            GuardarOrdenes();
+            OrderView.showMsg("Orden eliminada con exito");
+        }
+        public void UpdateClientByID() 
+        {
+            ShowAllOrders();
+            OrderView.showMsg("Ingrese un indice");
+            int index = int.Parse(Console.ReadLine());
+
+            var nuevoCliente = cController.LoadClient();
+            var nuevosProductos = pController.LoadProductList();
+
+            orderList[index].client = nuevoCliente;
+            orderList[index].productList = nuevosProductos;
+
+            GuardarOrdenes() ;
+        }
     }
 }

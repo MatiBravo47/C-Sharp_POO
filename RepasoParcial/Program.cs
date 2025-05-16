@@ -1,9 +1,4 @@
-﻿using Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using Controllers;
 
 namespace RepasoParcial
@@ -12,6 +7,7 @@ namespace RepasoParcial
     {
         static void Main()
         {
+            Console.Title = "Sistema de gestion de ordenes - Beta";
             OrderController controller = new OrderController();
 
             int opcion = 0;
@@ -22,7 +18,7 @@ namespace RepasoParcial
                 Console.WriteLine("2. Mostrar todas las órdenes");
                 Console.WriteLine("3. Eliminar orden por ID de cliente");
                 Console.WriteLine("4. Actualizar cliente en una orden");
-                Console.WriteLine("5. Salir");
+                Console.WriteLine("0. Salir");
                 Console.Write("Seleccione una opción: ");
 
                 try
@@ -39,13 +35,13 @@ namespace RepasoParcial
                             Console.ReadKey();
                             break;
                         case 3:
-                            //Lógica
+                            controller.DeleteOrderByClientID();
+                            Console.ReadKey();
                             break;
                         case 4:
-                            //Lógica
+                            controller.DeleteOrderByClientID();
+                            Console.ReadKey();
                             break;
-                        case 5:
-                            return;
                     }
                 }
                 catch (Exception e)

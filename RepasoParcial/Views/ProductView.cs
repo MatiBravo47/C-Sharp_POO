@@ -13,14 +13,15 @@ namespace Views
         {
             Product tempProduct =  new Product();
 
-            Console.WriteLine("Producto");
+            Console.Write("Nombre producto: ");
             tempProduct.Name = Console.ReadLine();
-            Console.WriteLine("Precio");
+            
+            Console.Write("Precio: ");
             tempProduct.Price = double.Parse(Console.ReadLine());
-            Console.WriteLine("Descripcion");
+            
+            Console.Write("Descripcion: ");
             tempProduct.Desc = Console.ReadLine();
             
-            Console.WriteLine(tempProduct);
             return tempProduct;
         }
 
@@ -31,7 +32,7 @@ namespace Views
             do
             {
                 tempList.Add(LoadProduct());
-                Console.WriteLine("Desea agregar otro producto(S/N)");
+                Console.Write("Desea agregar otro producto(S/N)");
                 resp = Console.ReadLine();
             } while (resp.ToLower() != "n");
             return tempList;

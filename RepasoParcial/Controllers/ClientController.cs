@@ -22,7 +22,5 @@ namespace Controllers
         {
             ClientView.ShowClient(temp);
         }
-
-
     }
 }

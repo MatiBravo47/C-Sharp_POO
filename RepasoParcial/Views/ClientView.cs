@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Models;
 
 namespace Views
@@ -12,22 +9,22 @@ namespace Views
         public static Client LoadClient() 
         { 
             Client tempClient = new Client();
-            Console.WriteLine("Nombre:");
+            
+            Console.Write("Nombre:");
             tempClient.Name = Console.ReadLine();
 
-            Console.WriteLine("Apellido:");
+            Console.Write("Apellido:");
             tempClient.LastName = Console.ReadLine();
 
-            Console.WriteLine("ID:");
+            Console.Write("ID:");
             tempClient.ID = Console.ReadLine();
 
-            Console.WriteLine("Direccion:");
+            Console.Write("Direccion:");
             tempClient.Adress = Console.ReadLine();
 
-            Console.WriteLine("Email:");
+            Console.Write("Email:");
             tempClient.Email = Console.ReadLine();
-            Console.WriteLine(tempClient);
-            Console.WriteLine(tempClient.Email);
+            
             return tempClient;
         }
 
