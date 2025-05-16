@@ -65,7 +65,23 @@ namespace Controllers
             OrderView.showMsg("Orden creada y guardada con exito");
             
         }
-        public void ShowAllOrders() { }
+        public void ShowAllOrders() 
+        {
+            if (orderList.Count == 0) 
+            {
+                Console.WriteLine("No hay ordenes");
+            }
+            int indice = 0;
+
+            foreach (var o in orderList) 
+            {
+                OrderView.showMsg($"Numero de orden: {indice}");
+                cController.ShowClient(o.client);
+                OrderView.showMsg("Lista de productos");
+                pController.ShowProductList(o.productList);
+                indice++;
+            }
+        }
         public void DeleteOrderByClientID(string clientID) { }
         public void UpdateClientByID(string clientID, Client nuevoCliente) { }
     }

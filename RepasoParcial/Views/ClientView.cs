@@ -10,8 +10,7 @@ namespace Views
     public static class ClientView
     {
         public static Client LoadClient() 
-        {
-            //string name, string lastname, string id, string adress, string email) 
+        { 
             Client tempClient = new Client();
             Console.WriteLine("Nombre:");
             tempClient.Name = Console.ReadLine();
@@ -27,17 +26,14 @@ namespace Views
 
             Console.WriteLine("Email:");
             tempClient.Email = Console.ReadLine();
-
+            Console.WriteLine(tempClient);
+            Console.WriteLine(tempClient.Email);
             return tempClient;
         }
 
         public static void ShowClient(Client client) 
         {
-            Console.WriteLine($"Nombre: {client.Name}");
-            Console.WriteLine($"Nombre: {client.LastName}");
-            Console.WriteLine($"Nombre: {client.ID}");
-            Console.WriteLine($"Nombre: {client.Adress}");
-            Console.WriteLine($"Nombre: {client.Email}");
+            Console.WriteLine($" ID: {client.ID} | Nombre: {client.Name} | Apellido: {client.LastName} | Direccion: {client.Adress} | Email: {client.Email}");
         }
     }
 }

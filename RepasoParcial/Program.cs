@@ -35,7 +35,8 @@ namespace RepasoParcial
                             controller.CreateOrder();
                             break;
                         case 2:
-                            //Lógica
+                            controller.ShowAllOrders();
+                            Console.ReadKey();
                             break;
                         case 3:
                             //Lógica

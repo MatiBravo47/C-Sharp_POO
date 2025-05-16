@@ -1,0 +1,71 @@
+[
+  {
+    "client": {
+      "Name": "adsads",
+      "LastName": "adsa",
+      "ID": "12",
+      "Adress": "sads",
+      "Email": "asda"
+    },
+    "productList": [
+      {
+        "Name": "asda",
+        "Price": 12,
+        "Desc": "asda"
+      }
+    ]
+  },
+  {
+    "client": {
+      "Name": "asdas",
+      "LastName": "asda",
+      "ID": "12",
+      "Adress": "asdas",
+      "Email": "asda"
+    },
+    "productList": [
+      {
+        "Name": "adasd",
+        "Price": 123,
+        "Desc": "asda"
+      }
+    ]
+  },
+  {
+    "client": {
+      "Name": "asdas",
+      "LastName": "asdads",
+      "ID": "1231",
+      "Adress": "aadsad",
+      "Email": "adsads"
+    },
+    "productList": [
+      {
+        "Name": "adas",
+        "Price": 123,
+        "Desc": "assda"
+      }
+    ]
+  },
+  {
+    "client": {
+      "Name": "Matias",
+      "LastName": "Bravo",
+      "ID": "12313",
+      "Adress": "Calle 1323",
+      "Email": "asdads"
+    },
+    "productList": [
+      {
+        "Name": "Iphone 16 pro max",
+        "Price": 25000,
+        "Desc": "asda"
+      },
+      {
+        "Name": "Notebook gamer",
+        "Price": 8000,
+        "Desc": "asdasd"
+      }
+    ]
+  }
+]

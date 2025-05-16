@@ -20,6 +20,7 @@ namespace Views
             Console.WriteLine("Descripcion");
             tempProduct.Desc = Console.ReadLine();
             
+            Console.WriteLine(tempProduct);
             return tempProduct;
         }
 
@@ -47,9 +48,7 @@ namespace Views
 
         public static void ShowProduct(Product product) 
         {
-            Console.WriteLine($"Producto: {product.Name}");
-            Console.WriteLine($"Precio: {product.Price}");
-            Console.WriteLine($"Descripcion: {product.Desc}");
+            Console.WriteLine($"{product.Name} -${product.Price} ({product.Desc}) ");
         }
     }
 }
