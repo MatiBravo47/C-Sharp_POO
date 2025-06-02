@@ -33,3 +33,4 @@ C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Text.Json.xml
 C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Matt_\source\repos\GestionPedidos\bin\Debug\System.ValueTuple.xml
 C:\Users\Matt_\source\repos\GestionPedidos\obj\Debug\GestionP.75F12D82.Up2Date
+C:\Users\Matt_\source\repos\GestionPedidos\obj\Debug\GestionPedidos.exe.config

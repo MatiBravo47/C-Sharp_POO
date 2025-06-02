@@ -1,7 +1,0 @@
-C:\Users\Matt_\source\repos\RegistroTemperaturas\RegistroTemperaturas\bin\Debug\RegistroTemperaturas.exe.config
-C:\Users\Matt_\source\repos\RegistroTemperaturas\RegistroTemperaturas\bin\Debug\RegistroTemperaturas.exe
-C:\Users\Matt_\source\repos\RegistroTemperaturas\RegistroTemperaturas\bin\Debug\RegistroTemperaturas.pdb
-C:\Users\Matt_\source\repos\RegistroTemperaturas\RegistroTemperaturas\obj\Debug\RegistroTemperaturas.csproj.AssemblyReference.cache
-C:\Users\Matt_\source\repos\RegistroTemperaturas\RegistroTemperaturas\obj\Debug\RegistroTemperaturas.csproj.CoreCompileInputs.cache
-C:\Users\Matt_\source\repos\RegistroTemperaturas\RegistroTemperaturas\obj\Debug\RegistroTemperaturas.exe
-C:\Users\Matt_\source\repos\RegistroTemperaturas\RegistroTemperaturas\obj\Debug\RegistroTemperaturas.pdb
